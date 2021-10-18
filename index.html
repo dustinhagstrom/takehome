@@ -8,94 +8,105 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <div>
-            <a href="index.html" class="main-nav__brand">
-                <img src="images/logo.png"/>
+            <a href="index.html" class="main-header__brand">
+                <img src="images/logo.png" alt="Rock Coast logo"/>
             </a>
         </div>
         <nav class="main-nav">
-            <ul>
-                <li>
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
                     <a href="index.html">Home</a>
                 </li>
-                <li>
+                <li class="main-nav__item">
                     <a href="#">Televisions</a>
                 </li>
-                <li>
+                <li class="main-nav__item">
                     <a href="#">Electronics</a>
                 </li>
-                <li>
+                <li class="main-nav__item">
                     <a href="#">Services</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Something Occurs</h2>
-            <p>Within this space is some text, or other graphical representations of things that this page displays.</p>
+        <section id="page-overview">
+            <h2 class="section-title">Something Occurs</h2>
+            <p id="page-info">Within this space is some text, or other graphical representations of things that this page displays.</p>
         </section>
         <section>
-            <h2>Products</h2>
-            <article>
-                <h2>Product Name</h2>
-                <div>
-                    <p>This is a product description<br>It takes up a few lines of space.</p>
-                    <hr>
+            <h2 class="section-title">Products</h2>
+        </section>
+        <section id="products">
+            <article class="product">
+                <h3 class="product__title">Product Name</h3>
+                <div class="product__section">
+                    <p class="product__description product__text">This is a product description<br>It takes up a few lines of space.</p>
+                    <hr class="product__hr">
                     <table>
                         <tbody>
                             <tr>
-                                <td>Product Info:</td>
-                                <td>Dimensions might go here</td>
+                                <td class="product__data product__text">Product Info:</td>
+                                <td class="product__data product__text">Dimensions might go here</td>
                             </tr>
                             <tr>
-                                <td>More Info:</td>
-                                <td>Another piece of data</td>
+                                <td class="product__data product__text">More Info:</td>
+                                <td class="product__data product__text">Another piece of data</td>
                             </tr>
                         </tbody>
                     </table>
-                    <div>Buy it now!</div>
+                    <hr class="product__hr">
+                    <div class="product__buy product__text">
+                        <p>Buy it now!</p>
+                    </div>
                 </div>
             </article>
-            <article>
-                <h2>Product Name</h2>
-                <div>
-                    <p>This is a product description<br>It takes up a few lines of space.</p>
-                    <hr>
+            <article class="product">
+                <h3 class="product__title">Product Name</h3>
+                <div class="product__section">
+                    <p class="product__description product__text">This is a product description<br>It takes up a few lines of space.</p>
+                    <hr class="product__hr">
                     <table>
                         <tbody>
                             <tr>
-                                <td>Product Info:</td>
-                                <td>Dimensions might go here</td>
+                                <td class="product__data product__text">Product Info:</td>
+                                <td class="product__data product__text">Dimensions might go here</td>
                             </tr>
                             <tr>
-                                <td>More Info:</td>
-                                <td>Another piece of data</td>
+                                <td class="product__data product__text">More Info:</td>
+                                <td class="product__data product__text">Another piece of data</td>
                             </tr>
                         </tbody>
                     </table>
-                    <div>Buy it now!</div>
+                    <hr class="product__hr">
+                    <div class="product__buy product__text">
+                        <p>Buy it now!</p>
+                    </div>
                 </div>
             </article>
-            <article>
-                <h2>Product Name</h2>
-                <div>
-                    <p>This is a product description<br>It takes up a few lines of space.</p>
-                    <hr>
+            <article class="product">
+                <h3 class="product__title">Product Name</h3>
+                <div class="product__section">
+                    <p class="product__description product__text">This is a product description<br>It takes up a few lines of space.</p>
+                    <hr class="product__hr">
                     <table>
                         <tbody>
                             <tr>
-                                <td>Product Info:</td>
-                                <td>Dimensions might go here</td>
+                                <td class="product__data product__text">Product Info:</td>
+                                <td class="product__data product__text">Dimensions might go here</td>
                             </tr>
                             <tr>
-                                <td>More Info:</td>
-                                <td>Another piece of data</td>
+                                <td class="product__data product__text">More Info:</td>
+                                <td class="product__data product__text">Another piece of data</td>
                             </tr>
                         </tbody>
                     </table>
-                    <div>Buy it now!</div>
+                    <hr class="product__hr">
+                    <div class="product__buy product__text">
+                        <p>Buy it now!</p>
+                    </div>
                 </div>
             </article>
         </section>
