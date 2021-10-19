@@ -5,28 +5,25 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
     background-color: black;
-    margin: 0;
+    margin: 0; /* removes the auto margin that causes body inset of html element */
 }
 
 .main-header {
-    width: 100%;
     background-color: rgb(108,128,146);
 }
 
 .main-header__brand {
-    height: 131px;
-    text-decoration: none;
-    display: inline-block;
+    height: 100%; /* this takes 100% height of parent element - the div in this case */
 }
 
 .main-header__brand img {
-    height: 100%;
+    height: 100%; /* this keeps the img the size of the header */
 }
 
 .main-header > div {
-    display: inline-block;
+    display: inline-block; /* aligns the logo with the logo with the links */
     vertical-align: middle;
-    height: 131px;
+    height: 140px;
 }
 
 .main-nav {
@@ -41,13 +38,13 @@ body {
 }
 
 .main-nav__items {
-    margin: 0;
+    margin: 0; /* removes the default margin from ul element */
     margin-right: 10%;
     padding: 0;
     list-style: none;
 }
 .main-nav__item {
-    display: inline-block;
+    display: inline-block; /* puts link in a line */
     font-size: larger;
 }
 
@@ -112,7 +109,7 @@ main {
 
 .product__table {
     height: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* this renders adjacent cells to share borders w/out a spacing between cells and seperate borders */
 }
 
 .product__hr {
@@ -129,8 +126,12 @@ main {
     padding: 15px 10px;
 }
 
+.product__link {
+    text-decoration: none;
+}
+
 .product__buy {
     display: flex;
     align-content: center;
     justify-content: center;
-}   
+}

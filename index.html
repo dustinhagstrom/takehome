@@ -1,20 +1,20 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- this is the document type declaration --> 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Coast Home</title>
+    <meta charset="UTF-8"><!-- utf-8 character set is the standard and is capable of encoding all valid char code points in unicode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- the "X-UA-Compatible" tag allows web authors to choose what version of Internet explorer the page should be rendered as. microsoft edge replaced IE11, it only honors this tag in certain circumstances, this tag should be as high as possible because when browser reads the page and hits this tag - it will then apply these settings and start over. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- this gives instructions to the browser on how to control the page's dimensions and scaling. initial scale=1.0 means no zoom-->
+    <title>Rock Coast Home</title> <!-- this element defines the document's title that is shown in a browser's title bar or a page's tab. -->
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
+    <header class="main-header"><!-- the header element was introduced in html5 and has inherent banner landmark for accessability as long as not a descendant of article, main, aside, nav, or section -->
         <div>
             <a href="index.html" class="main-header__brand">
                 <img src="images/logo.png" alt="Rock Coast logo"/>
             </a>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav"><!-- this is a navigational landmark role, this helps programmatically identify a layout. this helps with keyboard navigation in screen readers -->
             <ul class="main-nav__items">
                 <li class="main-nav__item">
                     <a href="index.html">Home</a>
@@ -31,84 +31,90 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="page-overview">
+    <main><!--  this identifies the dominant content of the body tag, again more specific to allow accessibility-->
+        <section id="page-overview"><!-- section tag is used for sections within the document for which a better tag is not available. each section should have a header tag for accessibility. if it doesn't have a header tag then screen readers won't pick it up. -->
             <h2 class="section-title">Something Occurs</h2>
             <p id="page-info">Within this space is some text, or other graphical representations of things that this page displays.</p>
         </section>
         <section>
             <h2 class="section-title">Products</h2>
-        </section>
-        <section id="products">
-            <article class="product">
-                <h3 class="product__title">Product Name</h3>
-                <div class="product__section">
-                    <p class="product__description product__text">This is a product description<br>It takes up a few lines of space.</p>
-                    <hr class="product__hr">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td class="product__data product__text">Product Info:</td>
-                                <td class="product__data product__text">Dimensions might go here</td>
-                            </tr>
-                            <tr>
-                                <td class="product__data product__text">More Info:</td>
-                                <td class="product__data product__text">Another piece of data</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <hr class="product__hr">
-                    <div class="product__buy product__text">
-                        <p>Buy it now!</p>
-                    </div>
+                <div id="products">
+                    <article class="product"><!-- articles used as a self-contained composition in a document, page, application, or site, which is intended to be independently distributable -->
+                        <h3 class="product__title">Product Name</h3>
+                        <div class="product__section">
+                            <p class="product__description product__text">This is a product description<br>It takes up a few lines of space.</p>
+                            <hr class="product__hr">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="product__data product__text">Product Info:</td>
+                                        <td class="product__data product__text">Dimensions might go here</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product__data product__text">More Info:</td>
+                                        <td class="product__data product__text">Another piece of data</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <hr class="product__hr">
+                            <a href="#" class="product__link">
+                                <div class="product__buy product__text">
+                                    <p>Buy it now!</p>
+                                </div>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <h3 class="product__title">Product Name</h3>
+                        <div class="product__section">
+                            <p class="product__description product__text">This is a product description<br>It takes up a few lines of space.</p>
+                            <hr class="product__hr">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="product__data product__text">Product Info:</td>
+                                        <td class="product__data product__text">Dimensions might go here</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product__data product__text">More Info:</td>
+                                        <td class="product__data product__text">Another piece of data</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <hr class="product__hr">
+                            <a href="#" class="product__link">
+                                <div class="product__buy product__text">
+                                    <p>Buy it now!</p>
+                                </div>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <h3 class="product__title">Product Name</h3>
+                        <div class="product__section">
+                            <p class="product__description product__text">This is a product description<br>It takes up a few lines of space.</p>
+                            <hr class="product__hr">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="product__data product__text">Product Info:</td>
+                                        <td class="product__data product__text">Dimensions might go here</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product__data product__text">More Info:</td>
+                                        <td class="product__data product__text">Another piece of data</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <hr class="product__hr">
+                            <a href="#" class="product__link">
+                                <div class="product__buy product__text">
+                                    <p>Buy it now!</p>
+                                </div>
+                            </a>
+                        </div>
+                    </article>
                 </div>
-            </article>
-            <article class="product">
-                <h3 class="product__title">Product Name</h3>
-                <div class="product__section">
-                    <p class="product__description product__text">This is a product description<br>It takes up a few lines of space.</p>
-                    <hr class="product__hr">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td class="product__data product__text">Product Info:</td>
-                                <td class="product__data product__text">Dimensions might go here</td>
-                            </tr>
-                            <tr>
-                                <td class="product__data product__text">More Info:</td>
-                                <td class="product__data product__text">Another piece of data</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <hr class="product__hr">
-                    <div class="product__buy product__text">
-                        <p>Buy it now!</p>
-                    </div>
-                </div>
-            </article>
-            <article class="product">
-                <h3 class="product__title">Product Name</h3>
-                <div class="product__section">
-                    <p class="product__description product__text">This is a product description<br>It takes up a few lines of space.</p>
-                    <hr class="product__hr">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td class="product__data product__text">Product Info:</td>
-                                <td class="product__data product__text">Dimensions might go here</td>
-                            </tr>
-                            <tr>
-                                <td class="product__data product__text">More Info:</td>
-                                <td class="product__data product__text">Another piece of data</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <hr class="product__hr">
-                    <div class="product__buy product__text">
-                        <p>Buy it now!</p>
-                    </div>
-                </div>
-            </article>
         </section>
     </main>
 </body>
